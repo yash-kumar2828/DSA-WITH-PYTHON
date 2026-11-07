@@ -1,10 +1,10 @@
 '''Enter the number of rows : 
 5
             A  
-         C  B  C  
-      E  D  C  D  E  
-   G  F  E  D  E  F  G  
-I  H  G  F  E  F  G  H  I  '''
+         C  B  A  
+      E  D  C  B  A  
+   G  F  E  D  C  B  A  
+I  H  G  F  E  D  C  B  A  '''
 
 
 def get_pattern(n):
@@ -17,15 +17,10 @@ def get_pattern(n):
             print(f"{' ':<3}",end="")
 
         alpha = 64+pattern_size
-        col_mid = pattern_size//2+1
         for k in range(1,pattern_size+1):
             print(f"{chr(alpha):<3}",end="")
 
-            if k<col_mid:
-                alpha-=1
-
-            else:
-                alpha+=1
+            alpha-=1
 
 
         pattern_size+=2
