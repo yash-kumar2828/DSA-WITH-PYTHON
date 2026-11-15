@@ -24,8 +24,8 @@ def get_pattern(n):
         for j in range(1,space+1):
             print(f"{' ':<3}",end="")
 
-        alpha = 64 + mid
         col_mid = pattern_size//2+1
+        alpha = 64 + col_mid
 
         for k in range(1,pattern_size+1):
             print(f"{chr(alpha):<3}",end="")

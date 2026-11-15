@@ -23,7 +23,7 @@ def get_pattern(n):
             print(f"{' ':<3}",end="")
 
         col_mid = pattern_size//2+1
-        num = mid-space
+        num = col_mid
 
         for k in range(1,pattern_size+1):
             print(f"{num:<3}",end="")

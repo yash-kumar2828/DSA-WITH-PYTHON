@@ -5,9 +5,9 @@
       6   6   
     5   5   5   
   4   4   4   4   
-    5   5   5   
-      6   6   
-        7          '''
+    3   3   3   
+      2   2   
+        1         '''
 
 
 def get_pattern(n):
@@ -27,16 +27,16 @@ def get_pattern(n):
         for k in range(1,pattern_size+1):
             print(f"{num:<4}",end="")
 
+
         if i<mid:
             pattern_size+=1
             space-=1
-            num-=1
 
         else:
             pattern_size-=1
             space+=1
-            num+=1
 
+        num-=1
         print()
 
 num = int(input("Enter the number of rows : "))
